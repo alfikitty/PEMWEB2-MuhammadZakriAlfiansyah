@@ -3,39 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthcare Management System</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Healthcare Management Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="bg-gray-100">
-    <div class="container mx-auto p-4">
-        <h1 class="text-3xl font-bold text-center my-8">Healthcare Management System</h1>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="kelurahan/index.php" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 class="text-xl font-semibold mb-2">Kelurahan Management</h2>
-                <p class="text-gray-600">Manage district data</p>
-            </a>
-            
-            <a href="unit_kerja/index.php" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 class="text-xl font-semibold mb-2">Unit Kerja Management</h2>
-                <p class="text-gray-600">Manage work units data</p>
-            </a>
-            
-            <a href="pasien/index.php" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 class="text-xl font-semibold mb-2">Pasien Management</h2>
-                <p class="text-gray-600">Manage patient records</p>
-            </a>
-            
-            <a href="paramedik/index.php" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 class="text-xl font-semibold mb-2">Paramedik Management</h2>
-                <p class="text-gray-600">Manage medical staff data</p>
-            </a>
-            
-            <a href="periksa/index.php" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 class="text-xl font-semibold mb-2">Periksa Management</h2>
-                <p class="text-gray-600">Manage examination records</p>
-            </a>
-        </div>
+    <!-- Sidebar -->
+    <div class="flex">
+        <aside class="w-64 bg-white shadow-md h-screen">
+            <div class="p-4">
+                <h2 class="text-2xl font-bold text-blue-600">Dashboard</h2>
+                <nav class="mt-6">
+                    <ul>
+                        <li>
+                            <a href="kelurahan/index.php" class="flex items-center py-2 px-4 text-gray-700 hover:bg-blue-100 rounded transition">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                Kelurahan Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="unit_kerja/index.php" class="flex items-center py-2 px-4 text-gray-700 hover:bg-blue-100 rounded transition">
+                                <i class="fas fa-briefcase mr-2"></i>
+                                Unit Kerja Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pasien/index.php" class="flex items-center py-2 px-4 text-gray-700 hover:bg-blue-100 rounded transition">
+                                <i class="fas fa-user-injured mr-2"></i>
+                                Pasien Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="paramedik/index.php" class="flex items-center py-2 px-4 text-gray-700 hover:bg-blue-100 rounded transition">
+                                <i class="fas fa-user-md mr-2"></i>
+                                Paramedik Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="periksa/index.php" class="flex items-center py-2 px-4 text-gray-700 hover:bg-blue-100 rounded transition">
+                                <i class="fas fa-stethoscope mr-2"></i>
+                                Periksa Management
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <h1 class="text-3xl font-bold mb-6">Welcome to the Healthcare Management Dashboard</h1>
+            <!-- Additional content can go here -->
+        </main>
     </div>
 </body>
 </html>
